@@ -2,9 +2,20 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+
+        int result = Multiply(2, 7);
+        Console.WriteLine($"{result}");
+
+
+        static int Add(int x, int y)
         {
-            Console.WriteLine("Hello, World!");
+            return x + y
         }
+
+        static int Multiply(int x, int y) 
+        { 
+            return (int)(x * y);
+        }
+        
     }
 }
