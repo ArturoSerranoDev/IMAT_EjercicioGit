@@ -1,4 +1,4 @@
-﻿namespace IMAT_GitTest
+﻿static void Main(string[] args)
 {
     internal class Program
     {
@@ -7,9 +7,12 @@
             Console.WriteLine(Add(2, 2));
         }
 
-        static int Add(int x, int y)
-        {
-            return x + y;
-        }
-    }
+static int Add(int x, int y)
+{
+    return x + y;
+}
+
+static int Multiply(int x, int y)
+{
+    return x * y;
 }
