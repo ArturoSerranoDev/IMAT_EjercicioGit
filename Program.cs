@@ -1,7 +1,11 @@
 ﻿static void Main(string[] args)
 {
-    Console.WriteLine(Multiply(3, 7));
-}
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Add(2, 2));
+        }
 
 static int Add(int x, int y)
 {
