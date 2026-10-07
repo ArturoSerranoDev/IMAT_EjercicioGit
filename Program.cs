@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine(Multiply(5,2));
         }
+
+        static int Add(int x, int y)
+        {
+            return x + y;
+        }
+        static int Multiply(int x, int y)
+        {
+            return x * y;
+        }
+
     }
 }
