@@ -4,7 +4,32 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine($"División: {Divide(2, 8)}");
+            Console.WriteLine(Substract(2,1));
         }
+
+        static int Add(int x, int y)
+        {
+            return x + y;
+        }
+        static int Multiply(int x, int y)
+        {
+            return x * y;
+        }
+        static int Divide(int x, int y)
+        {
+            if (y == 0)
+            {
+                Console.WriteLine($"Error: no se puede dividir {x} entre {y}");
+                return 0;
+            }
+            return x / y;
+        }
+
+        static int Substract(int x, int y)
+        {
+            return x-y;
+        }
+
     }
 }
