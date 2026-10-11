@@ -5,12 +5,16 @@ namespace IMAT_GitTest
         static void Main(string[] args)
         {
             Console.WriteLine($"División: {Divide(2, 8)}");
-            Console.WriteLine($"Resta: {Subtract(2, 2)}");
         }
 
         static int Add(int x, int y)
         {
             return x + y;
+        }
+
+        static int Subtract(int x, int y)
+        {
+            return x - y;
         }
 
         static int Multiply(int x, int y)
@@ -20,11 +24,12 @@ namespace IMAT_GitTest
 
         static int Divide(int x, int y)
         {
+            if (y == 0)
+            {
+                Console.WriteLine("Error: no se puede dividir entre 0.");
+                return 0;
+            }
             return x / y;
-
-        static int Subtract(int x, int y)
-        {
-            return x - y;
         }
     }
 }
