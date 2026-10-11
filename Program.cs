@@ -4,12 +4,17 @@ namespace IMAT_GitTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Suma: {Add(2, 2)}");
+            Console.WriteLine($"Multiplicación: {Multiply(2, 8)}");
         }
 
         static int Add(int x, int y)
         {
             return x + y;
+        }
+
+        static int Multiply(int x, int y)
+        {
+            return x * y;
         }
     }
 }
