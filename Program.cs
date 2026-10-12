@@ -18,7 +18,7 @@
         {
             if (y == 0) 
             {
-                Console.WriteLine("Cannot divide by 0");
+                Console.WriteLine($"Cannot divide by 0, inputs: {x}, {y}. ");
                 return 0.0;
              }
             else {return x / y; } 
