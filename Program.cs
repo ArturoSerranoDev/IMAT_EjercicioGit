@@ -6,10 +6,11 @@
         {
             int x = 2;
             int y = 1;
-            Console.WriteLine($"{Multiply(x,y)}");
+            Console.WriteLine($"{Divide(x,y)}");
         }
 
         static int Add(int x, int y) { return x + y; }
         static int Multiply(int x, int y) { return x * y; }
+        static int Divide(int x, int y) {return x / y; }
     }
 }
