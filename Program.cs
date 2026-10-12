@@ -6,10 +6,11 @@
         {
             int x = 2;
             int y = 1;
-            Console.WriteLine($"{Multiply(x,y)}");
+            Console.WriteLine($"{Subtract(x,y)}");
         }
 
         static int Add(int x, int y) { return x + y; }
         static int Multiply(int x, int y) { return x * y; }
+        static int Subtract(int x, int y){ return x - y; }
     }
 }
