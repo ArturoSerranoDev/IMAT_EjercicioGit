@@ -1,4 +1,4 @@
-
+﻿
 using System;
 
 namespace IMAT_GitTest
@@ -24,9 +24,8 @@ namespace IMAT_GitTest
         {
             if (y == 0)
             {
-                throw new DivideByZeroException(
-                    "No se puede dividir entre cero."
-                );
+                Console.WriteLine("No se puede dividir entre cero.");
+                return 0;
             }
 
             return x / y;
