@@ -9,11 +9,6 @@
             int idLast = id[id.Length - 1] - '0'; // Convert the last character to an integer
 
             Console.WriteLine(Subtract(id0, idLast));
-            while (idLast == 0)
-            {
-                idLast = id[id.Length - 2] - '0';
-            }
-            
             Console.WriteLine(Divide(id0, idLast));
         }
 
@@ -33,6 +28,11 @@
         }
         static int Divide(int x, int y)
         {
+            if (y == 0)
+            {
+                Console.WriteLine("Error: no se puede dividir entre 0.");
+                return 0;
+            }
             return x / y;
         }
     }
