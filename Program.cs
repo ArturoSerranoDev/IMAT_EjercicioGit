@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine(Divide(2, 4));
-            Console.WriteLine(Subtract(2, 4));
+            Console.WriteLine(Subtract(2, 8));
         }
 
         static int Add(int x, int y)
@@ -22,15 +22,15 @@
         {
             if (y == 0)
             {
-                Console.WriteLine("Hola, el divisor no puede ser 0.");
-                return;
+                Console.WriteLine($"Error: no se puede dividir {x} entre {y}.");
+                return 0;
             }
             return x / y;
+        }
 
         static int Subtract(int x, int y)
         {
             return x - y;
-
         }
     }
 }
