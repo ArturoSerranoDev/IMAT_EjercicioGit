@@ -5,7 +5,7 @@ namespace IMAT_GitTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Multiplicación: {Multiply(2, 0)}");
+            Console.WriteLine($"Resta: {Subtract(2, 2)}");
         }
  
         static int Add(int x, int y)
@@ -16,6 +16,10 @@ namespace IMAT_GitTest
         static int Multiply(int x, int y)
         {
             return x * y;
+        }
+        static int Subtract(int x, int y)
+        {
+            return x - y;
         }
     }
 }
