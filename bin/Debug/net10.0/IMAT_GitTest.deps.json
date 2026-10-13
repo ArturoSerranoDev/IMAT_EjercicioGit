@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "IMAT_GitTest/1.0.0": {
+        "runtime": {
+          "IMAT_GitTest.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IMAT_GitTest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
