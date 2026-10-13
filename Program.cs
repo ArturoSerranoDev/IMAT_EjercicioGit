@@ -25,6 +25,12 @@
  
         static int Divide(int x, int y)
         {
+            if (y == 0)
+            {
+                Console.WriteLine($"Error: no se puede dividir {x} entre {y}.");
+                return 0;
+            }
+ 
             return x / y;
         }
     }
