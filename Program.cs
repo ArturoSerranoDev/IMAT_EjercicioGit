@@ -10,7 +10,14 @@
 
         static public int Add(int x, int y) { return x + y; }
         static public int Multiply(int x, int y) { return x * y; }
-        static public int Divide(int x, int y) {return x / y; }
+        static public int Divide(int x, int y) {
+            if (y==0)
+            {
+                Console.WriteLine($"Error: division by zero. Valores {x} y {y}");
+                return 0;
+            }
+            return x / y;
+        }
         static public int Subtract(int x, int y) { return x - y; }
     }
 }
