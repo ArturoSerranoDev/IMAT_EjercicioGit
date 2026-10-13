@@ -24,7 +24,7 @@ namespace IMAT_GitTest
         {
             if (y == 0)
             {
-                Console.WriteLine("No se puede dividir entre cero.");
+                Console.WriteLine($"Error: no se puede dividir {x} entre {y}, porque el divisor es cero.");
                 return 0;
             }
 
