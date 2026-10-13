@@ -1,10 +1,37 @@
-﻿static int Divide(int x, int y)
+﻿namespace IMAT_GitTest
 {
-    if (y == 0)
+    internal class Program
     {
-        Console.WriteLine("Error: no se puede dividir entre cero.");
-        return 0;
-    }
+        static void Main(string[] args)
+        {
+            Console.WriteLine($"Resta: {Subtract(2, 2)}");
+            Console.WriteLine($"División: {Divide(2, 2)}");
+        }
  
-    return x / y;
+        static int Add(int x, int y)
+        {
+            return x + y;
+        }
+ 
+        static int Multiply(int x, int y)
+        {
+            return x * y;
+        }
+ 
+        static int Subtract(int x, int y)
+        {
+            return x - y;
+        }
+ 
+        static int Divide(int x, int y)
+        {
+            if (y == 0)
+            {
+                Console.WriteLine($"Error: no se puede dividir {x} entre {y}.");
+                return 0;
+            }
+ 
+            return x / y;
+        }
+    }
 }
