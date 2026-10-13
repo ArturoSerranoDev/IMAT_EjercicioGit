@@ -13,7 +13,7 @@
         static public int Divide(int x, int y) {
             if (y==0)
             {
-                Console.WriteLine("Error: division by zero.");
+                Console.WriteLine($"Error: division by zero. Valores {x} y {y}");
                 return 0;
             }
             return x / y;
